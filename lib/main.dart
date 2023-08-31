@@ -87,8 +87,13 @@ class MyFormState extends State<MyForm> {
                     child: const Text('Reset expression')),
               ],
             ),
-            const Divider(),
-            const SizedBox(height: 50.0),
+            const SizedBox(height: 20.0),
+            const Divider(
+              height: 10,
+              thickness: 1.5,
+              color: Colors.grey,
+            ),
+            const SizedBox(height: 30.0),
             if (errorText.isEmpty) ...[
               const Text(
                 'Input is valid.',
@@ -131,11 +136,3 @@ class MyFormState extends State<MyForm> {
     return dump.isEmpty ? '' : 'And this chars is wrong $dump';
   }
 }
-///Tento kód definuje jednoduchou aplikaci ve Flutteru s formulářem, kde můžete zadat text. Regulární výraz _allowedCharacters povoluje pouze znaky z ASCII rozsahu 32-126 a vietnamské diakritiky. Po stisknutí tlačítka "Validate" se text zkontroluje a zobrazí se odpovídající zpráva.
-
-//Mějte na paměti, že tento kód je zjednodušený a můžete jej upravit dle svých potřeb a přizpůsobit design a chování vaší aplikace.
-
-
-
-
-
